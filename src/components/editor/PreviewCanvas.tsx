@@ -29,7 +29,7 @@ export function PreviewCanvas({
   }
 
   return (
-    <div className="relative flex h-full min-h-0 items-center justify-center overflow-hidden bg-[oklch(0.955_0.006_260)]">
+    <div className="relative flex h-full min-h-0 items-center justify-center overflow-hidden bg-muted">
       {cropMode ? (
         <CropEditor
           item={item}
