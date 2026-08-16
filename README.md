@@ -4,7 +4,9 @@ Student-first tool that turns study screenshots into clean PDFs. Processing stay
 
 ## Live demo
 
-https://anmol110923.github.io/pdfguru/
+https://pdfguru.meraipu.in/
+
+The GitHub Pages URL (`https://anmol110923.github.io/pdfguru/`) redirects to the custom domain.
 
 ## Run locally
 
@@ -19,9 +21,9 @@ Open [http://localhost:3000](http://localhost:3000).
 
 Pushes to `main` deploy automatically to GitHub Pages via [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml).
 
-For local production preview with the Pages base path:
+For a local production preview of the static export:
 
 ```bash
-GITHUB_PAGES=true npm run build
+npm run build
 npx serve out
 ```
