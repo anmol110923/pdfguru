@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { FileText } from "lucide-react";
+import { ThemeToggle } from "@/components/theme-toggle";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
@@ -56,6 +57,7 @@ export function Navbar({
             >
               Privacy
             </a>
+            <ThemeToggle />
             <Button nativeButton={false} render={<Link href="/create" />} size="sm">
               Create PDF
             </Button>
@@ -72,6 +74,7 @@ export function Navbar({
                 </span>
               ) : null}
             </div>
+            <ThemeToggle />
             <Button
               onClick={onExport}
               disabled={exportDisabled}
